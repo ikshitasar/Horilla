@@ -7,4 +7,4 @@ echo -e "🟢 ${GREEN} Deploying... ${NC}"
 docker compose up -d --build
 
 
-echo -e "Deployed On 🔗: http://188.245.123.97:8001"
+echo -e "Deployed On 🔗: ${GREEN} http://188.245.123.97:8001$ ${NC}"
