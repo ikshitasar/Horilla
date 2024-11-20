@@ -8,8 +8,6 @@ WORKDIR /app/
 
 COPY requirements.txt .
 
-RUN chmod +x /app/entrypoint.sh
-
 RUN pip install -r requirements.txt
 
 COPY . .
