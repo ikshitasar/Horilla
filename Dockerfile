@@ -6,11 +6,13 @@ RUN apt-get update && apt-get install -y libcairo2-dev gcc
 
 WORKDIR /app/
 
-COPY . .
+COPY requirements.txt .
 
 RUN chmod +x /app/entrypoint.sh
 
 RUN pip install -r requirements.txt
+
+COPY . .
 
 EXPOSE 8000
 
